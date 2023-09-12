@@ -1,0 +1,68 @@
+.newPosters {
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-gap: 30px 15px;
+  .postersContent {
+    .postersLink {
+      .postersImg {
+        box-shadow: 0 0 0 1px #ddd, 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 5px solid #fff;
+        border-radius: 2px;
+        position: relative;
+        img {
+          object-fit: cover;
+        }
+        // .posterInfo {
+        // }
+
+        .hoverOverlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: grid;
+          place-items: center;
+          opacity: 0;
+          transition: 0.3s;
+          .playContainer {
+            .playButton {
+              width: 80px;
+              height: 80px;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .posterDesc {
+        padding: 12px 0 0 5px;
+        h3 {
+          font-size: 14px;
+          font-weight: 700;
+          color: #161616;
+          letter-spacing: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+        .posterSubtitle {
+          color: #9da5b1;
+          font-size: 12px;
+          margin-top: 4px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+      }
+      &:hover {
+        .hoverOverlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
