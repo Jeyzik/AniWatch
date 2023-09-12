@@ -1,0 +1,46 @@
+.carouselTitle {
+  background-image: linear-gradient(to bottom right, #11222c, #9e294f);
+  padding: 35px;
+  .carouselWrapper {
+    display: flex;
+    justify-content: space-around;
+    .carouselItem {
+      position: relative;
+      box-shadow: 0 0 10px rgb(0 0 0/50%);
+      border: 1px solid #222;
+      margin: 0 10px;
+      cursor: pointer;
+      .titleLink {
+        img {
+          max-height: 190px;
+        }
+        .desc {
+          position: absolute;
+          bottom: 0;
+          padding: 15px;
+          z-index: 2;
+          .descTitle {
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .imgMask::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 60%;
+      background: linear-gradient(to top, #000 0%, transparent 100%);
+      opacity: 0.8;
+    }
+  }
+}

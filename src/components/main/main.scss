@@ -1,0 +1,16 @@
+.main {
+  flex: 4;
+  background-color: #fff;
+  .mainWrapper {
+    .animeList {
+      padding: 20px 40px 40px 40px;
+      .animePosters {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(166px, 1fr));
+        grid-gap: 30px 30px;
+        grid-auto-flow: row dense;
+      }
+    }
+  }
+}

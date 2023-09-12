@@ -1,0 +1,40 @@
+.filter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #9da5b1;
+  .filterBlock {
+    .filterContent {
+      .filterSelect {
+        width: 150px;
+        margin: 1px;
+        .selectLabel {
+          border: 1px solid #eaeaea;
+          border-radius: 3px;
+          padding: 5px 30px 5px 10px;
+          cursor: pointer;
+          .labelCount {
+            font-size: 12px;
+            font-weight: 700;
+            border-right: 1px solid #eaeaea;
+            margin: 0 5px 0 0;
+            padding: 0 7px 0 0;
+          }
+        }
+      }
+      .btnClear {
+        button {
+          background-color: #eaeaea;
+          width: 33px;
+          height: 33px;
+          border-radius: 50%;
+          transition: 0.3s;
+          &:hover {
+            background-color: #f06102;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

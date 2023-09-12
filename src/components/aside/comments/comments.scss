@@ -1,0 +1,54 @@
+.comments {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  .commentItem {
+    padding: 0 30px;
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .avatar {
+        img {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .author {
+          padding-left: 10px;
+          font-weight: 500;
+        }
+      }
+    }
+    .publicDate {
+      font-size: 12px;
+      color: #9da5b1;
+      margin-left: 10px;
+    }
+    .text {
+      margin: 8px 0 10px;
+      opacity: 0.66;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    .link {
+      display: block;
+      font-size: 12px;
+      color: #9da5b1;
+      text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      .animeName {
+        padding-left: 4px;
+      }
+    }
+  }
+}

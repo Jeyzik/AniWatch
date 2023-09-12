@@ -1,0 +1,162 @@
+.header {
+  background-image: linear-gradient(
+    90deg,
+    rgb(121, 9, 115, 0.65) 0%,
+    rgb(60, 9, 121, 0.65) 100%
+  );
+  box-shadow: 0 0 60px rgb(0 0 0);
+  border-radius: 0 0 10px 10px;
+  z-index: 5;
+  .headerWrapper {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .logo {
+      margin-right: 50px;
+      text-transform: uppercase;
+      color: #fff;
+      .title {
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 700;
+        line-height: 1;
+        text-shadow: 0 0 10px #0d0336;
+        font-family: "Nunito", sans-serif;
+      }
+      .caption {
+        font-size: 10px;
+        font-weight: 500;
+        color: #fff;
+        opacity: 0.9;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 5px;
+      }
+    }
+    .search {
+      position: relative;
+      width: 380px;
+      form {
+        width: 100%;
+
+        input {
+          padding: 0 60px 0 20px;
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.2);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          height: 40px;
+          width: 100%;
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.781);
+          }
+        }
+        .searchBtn {
+          position: absolute;
+          top: 9px;
+          right: 0;
+          .searchL {
+            width: 60px;
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .themToggle {
+      .toggleMenu {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        height: 40px;
+        border-radius: 20px;
+        padding: 5px 0;
+        margin: 0 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        li {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 50%;
+          text-align: center;
+          margin: 0 5px;
+
+          &:hover {
+            background-color: #00000033;
+          }
+        }
+        li.active {
+          background-color: #9e294f;
+          z-index: 2;
+        }
+      }
+    }
+    .notification {
+      position: relative;
+      cursor: pointer;
+      .bellIcon {
+        font-size: 28px;
+      }
+      .notificationCounter {
+        position: absolute;
+        font-size: 10px;
+        right: 0;
+        top: 0;
+        background-color: #9e294f;
+        height: 16px;
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-weight: 500;
+      }
+    }
+    .discord {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      margin: 0 20px;
+      transition: 0.3s;
+
+      .dis {
+        background-image: url("../../../public/img/discord.svg");
+        background-size: 32px;
+      }
+      .disAction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+      }
+      &:hover {
+        background-color: #9e294f;
+      }
+    }
+    .login {
+      letter-spacing: 2px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #e6e6e6;
+      gap: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      height: 40px;
+      border-radius: 16px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background-color: #f06102;
+      }
+    }
+  }
+}
