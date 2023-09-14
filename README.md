@@ -14,3 +14,4 @@ Does not include adaptation for other devices (desktop only).
 REST API library 'jsonplaceholder' installed
 
 Сreated a database of information about anime components
+![preview_2](https://github.com/Jeyzik/AniWatch/assets/85117815/593343cf-8923-4cf1-897c-bb4f591a00ab)
