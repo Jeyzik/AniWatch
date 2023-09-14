@@ -6,60 +6,41 @@ import Filter from "./filterAnime/Filter";
 import AnimePosters from "./animePosters/AnimePosters";
 import NewAnimePosters from "./newAnimePosters/NewAnimePosters";
 
-const Main = () => {
+const Main = ({ item }) => {
   return (
     <div className="main">
       <div className="mainWrapper">
-        <CarouselTitle />
+        <CarouselTitle item={item} />
         <Menus />
         <div className="animeList">
           <Filter />
           <div className="animePosters">
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
-            <AnimePosters />
+            {item.map((item, i) => (
+              <AnimePosters
+                img={item.animePoster}
+                series={item.series}
+                name={item.animeName}
+                date={item.date}
+                geners={item.genres + ","}
+                key={i}
+              />
+            ))}
           </div>
           <h3 className="title">New anime on the site</h3>
           <div className="newPosters">
-            <NewAnimePosters />
-            <NewAnimePosters />
-            <NewAnimePosters />
-            <NewAnimePosters />
-            <NewAnimePosters />
-            <NewAnimePosters />
+            {item.map((item, i) => {
+              if (i < 6) {
+                return (
+                  <NewAnimePosters
+                    img={item.animePoster}
+                    date={item.date}
+                    geners={item.genres + ","}
+                    name={item.name}
+                    key={i}
+                  />
+                );
+              }
+            })}
           </div>
           <div className="speedBar">
             <a href="#">AniWatch</a>

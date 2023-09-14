@@ -1,0 +1,378 @@
+{
+  "animeList": [
+    {
+      "id": 1,
+      "animePoster": "./img/animeposter/animePoster.jpg",
+      "series": "6",
+      "animeName": "Sorcery Fight",
+      "date": "2021",
+      "genres": [
+        " Demons",
+        " Supernatural",
+        " Shounen",
+        " Horror",
+        " Fantasy",
+        " School",
+        " Action"
+      ]
+    },
+    {
+      "id": 2,
+      "animePoster": "./img/animeposter/mushoku-tensei.jpg",
+      "series": "10",
+      "animeName": "Mushoku Tensei: Jobless Reincarnation",
+      "date": "2023",
+      "genres": [" Drama", " Adventure", " Fantasy", " Ecchi"]
+    },
+    {
+      "id": 3,
+      "animePoster": "./img/animeposter/bucketList.jpg",
+      "series": "7",
+      "animeName": "Zom 100: Bucket List of the Dead",
+      "date": "2021",
+      "genres": [" Comedy", " Supernatural", " Seinen", " Horror", " Action"]
+    },
+    {
+      "id": 4,
+      "animePoster": "./img/animeposter/happyMarriage.jpg",
+      "series": "10",
+      "animeName": "My Happy Marriage",
+      "date": "2023",
+      "genres": [" Drama", " Historical", " Romance", " Fantasy"]
+    },
+    {
+      "id": 5,
+      "animePoster": "./img/animeposter/missingPieces.jpg",
+      "series": "11",
+      "animeName": "Horimiya: The Missing Pieces",
+      "date": "2023",
+      "genres": [" Romance", " Shonen", " School"]
+    },
+    {
+      "id": 6,
+      "animePoster": "./img/animeposter/undeadMurder.jpg",
+      "series": "10",
+      "animeName": "Undead Murder Farce",
+      "date": "2023",
+      "genres": [
+        " Vampires",
+        " Detective",
+        " Historical",
+        " Supernatural",
+        " Fantasy"
+      ]
+    },
+    {
+      "id": 7,
+      "animePoster": "./img/animeposter/sugarApple2.jpg",
+      "series": "10",
+      "animeName": "Sugar Apple Fairy Tale Part 2",
+      "date": "2023",
+      "genres": [" Drama", " Adventure", " Romance", " Shoujo", " Fantasy"]
+    },
+    {
+      "id": 8,
+      "animePoster": "./img/animeposter/sayILoveYou.jpg",
+      "series": "13",
+      "animeName": "Say 'I Love You.'",
+      "date": "2012",
+      "genres": [" Drama", " Romance", " Shoujo", " School"]
+    },
+    {
+      "id": 9,
+      "animePoster": "./img/animeposter/Yamada-kun.jpg",
+      "series": "12",
+      "animeName": "Yamada-kun and the Seven Witches",
+      "date": "2015",
+      "genres": [
+        " Harem",
+        " Detective",
+        " Comedy",
+        " Romance",
+        " Supernatural",
+        " Shonen",
+        " School"
+      ]
+    },
+    {
+      "id": 10,
+      "animePoster": "./img/animeposter/Shiki-Specials.jpg",
+      "series": "2",
+      "animeName": "Shiki Specials",
+      "date": "2011",
+      "genres": [
+        " Vampires",
+        " Detective",
+        " Psychological",
+        " Supernatural",
+        " Shonen",
+        " Thriller",
+        " Horror"
+      ]
+    },
+    {
+      "id": 11,
+      "animePoster": "./img/animeposter/HeavyMetal.jpg",
+      "series": "15",
+      "animeName": "Bastard‼ Heavy Metal, Dark Fantasy Season 2",
+      "date": "2021",
+      "genres": [" Comedy", " Adventure", " Seinen", " Fantasy", " Action"]
+    },
+    {
+      "id": 12,
+      "animePoster": "./img/animeposter/PrincessPrincipal.jpg",
+      "series": "1",
+      "animeName": "Princess Principal: Crown Handler - Chapter 2",
+      "date": "2021",
+      "genres": [" Detective", " Historical", " Action"]
+    },
+    {
+      "id": 13,
+      "animePoster": "./img/animeposter/CastleintheMirror.jpg",
+      "series": "1",
+      "animeName": "Lonely Castle in the Mirror",
+      "date": "2022",
+      "genres": [" Detective", " Drama", " Fantasy"]
+    },
+    {
+      "id": 14,
+      "animePoster": "./img/animeposter/LittleLies.jpg",
+      "series": "11",
+      "animeName": "The Little Lies We All Tell",
+      "date": "2022",
+      "genres": [
+        " Comedy",
+        " Everyday",
+        " Life",
+        " Supernatural",
+        " Shonen",
+        " Sci-Fi",
+        " School"
+      ]
+    },
+    {
+      "id": 15,
+      "animePoster": "./img/animeposter/king-game.jpg",
+      "series": "12",
+      "animeName": "King's Game",
+      "date": "2017",
+      "genres": [
+        " Madness",
+        " Detective",
+        " Drama",
+        " Supernatural",
+        " Horror",
+        " School"
+      ]
+    },
+    {
+      "id": 16,
+      "animePoster": "./img/animeposter/dance-sword.jpg",
+      "series": "12",
+      "animeName": "Zoku Touken Ranbu: Hanamaru",
+      "date": "2018",
+      "genres": [
+        " Drama",
+        " Historical",
+        " Comedy",
+        " Everyday Life",
+        " Fantasy",
+        " Action"
+      ]
+    },
+    {
+      "id": 17,
+      "animePoster": "./img/animeposter/overlord-2.jpg",
+      "series": "13",
+      "animeName": "Overlord II",
+      "date": "2018",
+      "genres": [
+        " Games",
+        " Magic",
+        " Adventure",
+        " Supernatural",
+        " Fantasy",
+        " Action"
+      ]
+    },
+    {
+      "id": 18,
+      "animePoster": "./img/animeposter/ArifuretaShokugyou.jpg",
+      "series": "13",
+      "animeName": "Arifureta: From Commonplace to World's Strongest",
+      "date": "2019",
+      "genres": [" Harem", " Adventure", " Fantasy", " Action"]
+    },
+    {
+      "id": 19,
+      "animePoster": "./img/animeposter/NanabunnoNijyuuni.jpg",
+      "series": "12",
+      "animeName": "22/7",
+      "date": "2016",
+      "genres": [" Music"]
+    },
+    {
+      "id": 20,
+      "animePoster": "./img/animeposter/WarlordsofSigrdrifa.jpg",
+      "series": "12",
+      "animeName": "Warlords of Sigrdrifa",
+      "date": "2020",
+      "genres": [" Military", " Action"]
+    },
+    {
+      "id": 21,
+      "animePoster": "./img/animeposter/StarWarsVisions.jpg",
+      "series": "9",
+      "animeName": "Star Wars: Visions",
+      "date": "2021",
+      "genres": [" Adventure", " Sci-Fi", " Action"]
+    },
+    {
+      "id": 22,
+      "animePoster": "./img/animeposter/KizumonogatariPart1Tekketsu.jpg",
+      "series": "12",
+      "animeName": "Kizumonogatari Part 1: Tekketsu",
+      "date": "2016",
+      "genres": [" Vampires", " Detective", " Supernatural"]
+    },
+    {
+      "id": 23,
+      "animePoster": "./img/animeposter/Bakuman2ndSeason.jpg",
+      "series": "25",
+      "animeName": "Bakuman",
+      "date": "2021",
+      "genres": [" Drama", " Comedy", " Romance", " Shounen"]
+    },
+    {
+      "id": 24,
+      "animePoster": "./img/animeposter/ShiYiChangAnMingYueJiShiYou.jpg",
+      "series": "1",
+      "animeName": "Shi Yi Chang An: Ming Yue Ji Shi You",
+      "date": "2020",
+      "genres": [" Historical", " Romance"]
+    },
+    {
+      "id": 25,
+      "animePoster": "./img/animeposter/EngageKiss.jpg",
+      "series": "6",
+      "animeName": "Engage Kiss",
+      "date": "2021",
+      "genres": [" Comedy", " Romance"]
+    },
+    {
+      "id": 26,
+      "animePoster": "./img/animeposter/IsekaiCheatMagician.jpg",
+      "series": "12",
+      "animeName": "Isekai Cheat Magician",
+      "date": "2019",
+      "genres": [" Adventure", " Fantasy", " Action"]
+    },
+    {
+      "id": 27,
+      "animePoster": "./img/animeposter/SorceryFight-2.jpg",
+      "series": "7",
+      "animeName": "Sorcery Fight 2nd Season",
+      "date": "2023",
+      "genres": [" Shounen", " Fantasy", " School", " Action"]
+    },
+    {
+      "id": 28,
+      "animePoster": "./img/animeposter/GodzillaSingularPoint.jpg",
+      "series": "13",
+      "animeName": "Godzilla Singular Point",
+      "date": "2021",
+      "genres": [" Detective", " Mecha", " Sci-Fi", " Action"]
+    },
+    {
+      "id": 29,
+      "animePoster": "./img/animeposter/ONEPIECEFILMGOLD.jpg",
+      "series": "1",
+      "animeName": "ONE PIECE FILM GOLD",
+      "date": "2021",
+      "genres": [
+        " Drama",
+        " Comedy",
+        " Adventure",
+        " Shonen",
+        " Fantasy",
+        " Action"
+      ]
+    },
+    {
+      "id": 30,
+      "animePoster": "./img/animeposter/KoyomiVamp.jpg",
+      "series": "1",
+      "animeName": "Koyomi Vamp",
+      "date": "2017",
+      "genres": [" Vampires", " Detective", " Supernatural", " Action"]
+    },
+    {
+      "id": 31,
+      "animePoster": "./img/animeposter/SwordArtOnlineAlicization.jpg",
+      "series": "24",
+      "animeName": "Sword Art Online: Alicization",
+      "date": "2018",
+      "genres": [" Games", " Adventure", " Romance", " Fantasy", " Action"]
+    },
+    {
+      "id": 32,
+      "animePoster": "./img/animeposter/InfiniteDendrogram.jpg",
+      "series": "13",
+      "animeName": "Infinite Dendrogram",
+      "date": "2020",
+      "genres": [" Games", " Fantasy"]
+    },
+    {
+      "id": 33,
+      "animePoster": "./img/animeposter/GrandmasterofDemonicCultivation2.jpg",
+      "series": "8",
+      "animeName": "Grandmaster of Demonic Cultivation 2",
+      "date": "2019",
+      "genres": [
+        " Detective",
+        " Historical",
+        " Comedy",
+        " Supernatural",
+        " Action"
+      ]
+    },
+    {
+      "id": 34,
+      "animePoster": "./img/animeposter/ShamanKing.jpg",
+      "series": "52",
+      "animeName": "Shaman King",
+      "date": "2021",
+      "genres": [
+        " Comedy",
+        " Adventure",
+        " Supernatural",
+        " Shounen",
+        " Super Power",
+        " Action"
+      ]
+    },
+    {
+      "id": 35,
+      "animePoster": "./img/animeposter/TheIrregularatMagicHighSchoolVisitorArc.jpg",
+      "series": "13",
+      "animeName": "The Irregularat Magic High School Visitor Arc",
+      "date": "2020",
+      "genres": [
+        " Magic",
+        " Romance",
+        " Supernatural",
+        " Sci-Fi",
+        " School",
+        " Action"
+      ]
+    },
+    {
+      "id": 36,
+      "animePoster": "./img/animeposter/yasuke.jpg",
+      "series": "6",
+      "animeName": "Yasuke",
+      "date": "2021",
+      "genres": [" Samurai", " Fantasy", " Action"]
+    }
+  ]
+}

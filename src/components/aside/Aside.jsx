@@ -46,7 +46,7 @@ const Aside = () => {
       <div className="randomAnime">
         <div className="wrapperPoster imgMask">
           <a href="#">
-            <img src="./img/animePoster.jpg" alt="randomAnime" />
+            <img src="./img/animeposter/animePoster.jpg" alt="randomAnime" />
             <div className="description">
               <div className="descTitle">Jujutsu Kaisen</div>
             </div>

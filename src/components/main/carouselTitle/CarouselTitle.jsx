@@ -1,58 +1,22 @@
 import React from "react";
 import "./carouselTitle.scss";
+import CarouselItem from "./carouselItem/CarouselItem";
 
-const CarouselTitle = () => {
+const CarouselTitle = ({ item }) => {
   return (
     <div className="carouselTitle">
       <div className="carouselWrapper">
-        <div className="carouselItem imgMask">
-          <a href="#" className="titleLink">
-            <img src="./img/animePoster.jpg" alt="anime-poster" />
-            <div className="desc">
-              <div className="descTitle">Jujutsu Kaisen</div>
-            </div>
-          </a>
-        </div>
-        <div className="carouselItem imgMask">
-          <a href="#" className="titleLink">
-            <img src="./img/animePoster.jpg" alt="anime-poster" />
-            <div className="desc">
-              <div className="descTitle">Jujutsu Kaisen</div>
-            </div>
-          </a>
-        </div>
-        <div className="carouselItem imgMask">
-          <a href="#" className="titleLink">
-            <img src="./img/animePoster.jpg" alt="anime-poster" />
-            <div className="desc">
-              <div className="descTitle">Jujutsu Kaisen</div>
-            </div>
-          </a>
-        </div>
-        <div className="carouselItem imgMask">
-          <a href="#" className="titleLink">
-            <img src="./img/animePoster.jpg" alt="anime-poster" />
-            <div className="desc">
-              <div className="descTitle">Jujutsu Kaisen</div>
-            </div>
-          </a>
-        </div>
-        <div className="carouselItem imgMask">
-          <a href="#" className="titleLink">
-            <img src="./img/animePoster.jpg" alt="anime-poster" />
-            <div className="desc">
-              <div className="descTitle">Jujutsu Kaisen</div>
-            </div>
-          </a>
-        </div>
-        <div className="carouselItem imgMask">
-          <a href="#" className="titleLink">
-            <img src="./img/animePoster.jpg" alt="anime-poster" />
-            <div className="desc">
-              <div className="descTitle">Jujutsu Kaisen</div>
-            </div>
-          </a>
-        </div>
+        {item.map((item) => {
+          if (item.id <= 6) {
+            return (
+              <CarouselItem
+                img={item.animePoster}
+                name={item.animeName}
+                key={item.id}
+              />
+            );
+          }
+        })}
       </div>
     </div>
   );

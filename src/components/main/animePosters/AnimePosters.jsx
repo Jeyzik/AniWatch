@@ -4,31 +4,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faCirclePlay } from "@fortawesome/free-regular-svg-icons";
 
-const AnimePosters = () => {
+const AnimePosters = ({ img, series, name, date, geners }) => {
   return (
     <div className="posters">
       <div className="postersContent">
         <a href="#" className="postersLink">
           <div className="postersImg">
-            <img src="./img/animePoster.jpg" alt="anime-poster" />
+            <img src={img} alt="anime-poster" />
             <div className="posterInfo"></div>
             <div className="posterSeries">
               <FontAwesomeIcon icon={faArrowRight} />
-              <span>6 series</span>
+              <span>{series} series</span>
             </div>
             <div className="posterTrailer">New Item</div>
             <div className="hoverOverlay">
               <div className="playContainer">
                 <FontAwesomeIcon icon={faCirclePlay} className="playButton" />
               </div>
-              <span className="hoverSeries">6</span>
+              <span className="hoverSeries">{series}</span>
             </div>
           </div>
           <div className="posterDesc">
-            <h3>Jujutsu Kaisen</h3>
+            <h3>{name}</h3>
             <div className="posterSubtitle">
-              2020 Demons, Supernatural, Shounen, Horror, Fantasy, School,
-              Action
+              {date} {geners}
             </div>
           </div>
         </a>
