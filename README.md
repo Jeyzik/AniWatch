@@ -1,3 +1,6 @@
+Launch the application: npm start
+Launching a server for anime components: npm run server
+
 #React Markup commit
 
 React markup of the main page and basic breakdown into components.
