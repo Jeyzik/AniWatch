@@ -6,8 +6,16 @@ const CarouselTitle = ({ item }) => {
   return (
     <div className="carouselTitle">
       <div className="carouselWrapper">
-        {item.map((item) => {
+        {item.map((item, i) => {
           if (item.id <= 6) {
+            return (
+              <CarouselItem
+                img={item.animePoster}
+                name={item.animeName}
+                key={item.id}
+              />
+            );
+          } else if (i < 6) {
             return (
               <CarouselItem
                 img={item.animePoster}

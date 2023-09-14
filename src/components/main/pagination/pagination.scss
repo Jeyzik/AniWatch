@@ -1,0 +1,33 @@
+.paginationList {
+  margin-top: 20px;
+  li {
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
+    a {
+      display: inline-block;
+      line-height: 36px;
+      padding: 0 10px;
+      min-width: 38px;
+      font-size: 14px;
+      border: 1px solid #eaeaea;
+      border-radius: 19px;
+      color: #161616;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background: #9e294f;
+        color: #fff;
+        border-color: #9e294f;
+      }
+    }
+  }
+
+  .selected {
+    a {
+      background-color: #9e294f;
+      color: #fff;
+    }
+  }
+}

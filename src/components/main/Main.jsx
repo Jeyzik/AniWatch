@@ -5,8 +5,9 @@ import Menus from "./menus/Menus";
 import Filter from "./filterAnime/Filter";
 import AnimePosters from "./animePosters/AnimePosters";
 import NewAnimePosters from "./newAnimePosters/NewAnimePosters";
+import Pagination from "./pagination/Pagination";
 
-const Main = ({ item }) => {
+const Main = ({ item, setCurrentPage }) => {
   return (
     <div className="main">
       <div className="mainWrapper">
@@ -26,6 +27,7 @@ const Main = ({ item }) => {
               />
             ))}
           </div>
+          <Pagination onChangePage={(number) => setCurrentPage(number)} />
           <h3 className="title">New anime on the site</h3>
           <div className="newPosters">
             {item.map((item, i) => {
