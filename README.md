@@ -24,3 +24,10 @@ Set a limit of 16 anime components and added pagination to navigate through them
 
 ![preview_3](https://github.com/Jeyzik/AniWatch/assets/85117815/97a6c3bd-1869-4443-bc01-153c0cb97f29)
 
+#Filter commit
+
+Added 2 sorting panels, 1st by anime genre, 2nd by release date and number of episodes. Will be supplemented in the future
+
+Added a button to clear all selected filters (X)
+
+![filter](https://github.com/Jeyzik/AniWatch/assets/85117815/d07265b8-bcb7-44ec-ac7e-ad112fa16772)
