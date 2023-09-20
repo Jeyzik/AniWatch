@@ -21,3 +21,6 @@ REST API library 'jsonplaceholder' installed
 react-paginate library 'jsonplaceholder' installed
 
 Set a limit of 16 anime components and added pagination to navigate through them.
+
+![preview_3](https://github.com/Jeyzik/AniWatch/assets/85117815/97a6c3bd-1869-4443-bc01-153c0cb97f29)
+
