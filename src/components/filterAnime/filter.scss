@@ -1,0 +1,121 @@
+.filter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #9da5b1;
+  .filterBlock {
+    user-select: none;
+    .filterContent {
+      .filterSelect {
+        position: relative;
+        width: 150px;
+        margin: 1px;
+        .selectLabel {
+          position: relative;
+          border: 1px solid #eaeaea;
+          border-radius: 3px;
+          padding: 5px 30px 5px 10px;
+          cursor: pointer;
+          .labelCount {
+            font-size: 12px;
+            font-weight: 700;
+            border-right: 1px solid #eaeaea;
+            margin: 0 5px 0 0;
+            padding: 0 7px 0 0;
+          }
+          &::after {
+            top: 13px;
+            right: 13px;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            z-index: 25;
+            content: "";
+            opacity: 0.5;
+            display: inline-block;
+            position: absolute;
+            border-top: 5px dashed;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+            text-shadow: none;
+            transition: opacity;
+          }
+        }
+        .selectDropdown {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          min-height: 35px;
+          margin: -1px 0 0;
+          padding: 0;
+          z-index: 30;
+          overflow: hidden;
+          background-color: #fff;
+          border-width: 0;
+          border-style: solid;
+          border-color: #d9d9d9;
+          border-radius: 0 0 3px 3px;
+          box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1),
+            0 0 1px 1px rgba(0, 0, 0, 0.25);
+          -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1),
+            0 0 1px 1px rgba(0, 0, 0, 0.25);
+          .dropdownInner {
+            max-height: 350px;
+            width: 100%;
+            margin: 0;
+            padding: 1px 0;
+            display: block;
+            overflow-x: hidden;
+            overflow-y: auto;
+            .dropdownGroup {
+              width: 100%;
+              .dropdownOption {
+                color: #161616;
+                padding: 5px 10px 5px 35px;
+                font-size: 12px;
+                text-align: left;
+                line-height: 18px;
+                font-weight: 400;
+                transition: 0.3s;
+                cursor: pointer;
+                &:hover {
+                  background-color: #e9edf2;
+                }
+                &:first-of-type {
+                  margin-top: 7px;
+                }
+              }
+              li.active {
+                color: #161616;
+                padding: 5px 10px 5px 35px;
+                font-size: 12px;
+                text-align: left;
+                line-height: 18px;
+                font-weight: 400;
+                background-color: #e9edf2;
+              }
+            }
+          }
+        }
+        .show-menu {
+          display: block;
+        }
+      }
+      .btnClear {
+        button {
+          background-color: #eaeaea;
+          width: 33px;
+          height: 33px;
+          border-radius: 50%;
+          transition: 0.3s;
+          &:hover {
+            background-color: #f06102;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

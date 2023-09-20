@@ -10,7 +10,7 @@ const Comments = () => {
         <div className="profile">
           <div className="avatar">
             <img src="./img/avatar.jpg" alt="avatar" />
-            <span className="author">JeyJey</span>
+            <span className="author">Kuro</span>
           </div>
           <div className="publicDate">10.09.23</div>
         </div>

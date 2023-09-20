@@ -7,13 +7,13 @@
       "animeName": "Sorcery Fight",
       "date": "2021",
       "genres": [
-        " Demons",
-        " Supernatural",
-        " Shounen",
-        " Horror",
-        " Fantasy",
-        " School",
-        " Action"
+        "Demons",
+        "Supernatural",
+        "Shounen",
+        "Horror",
+        "Fantasy",
+        "School",
+        "Action"
       ]
     },
     {
@@ -22,7 +22,7 @@
       "series": "10",
       "animeName": "Mushoku Tensei: Jobless Reincarnation",
       "date": "2023",
-      "genres": [" Drama", " Adventure", " Fantasy", " Ecchi"]
+      "genres": ["Drama", "Adventure", "Fantasy", "Ecchi"]
     },
     {
       "id": 3,
@@ -30,7 +30,7 @@
       "series": "7",
       "animeName": "Zom 100: Bucket List of the Dead",
       "date": "2021",
-      "genres": [" Comedy", " Supernatural", " Seinen", " Horror", " Action"]
+      "genres": ["Comedy", "Supernatural", "Seinen", "Horror", "Action"]
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "series": "10",
       "animeName": "My Happy Marriage",
       "date": "2023",
-      "genres": [" Drama", " Historical", " Romance", " Fantasy"]
+      "genres": ["Drama", "Historical", "Romance", "Fantasy"]
     },
     {
       "id": 5,
@@ -46,7 +46,7 @@
       "series": "11",
       "animeName": "Horimiya: The Missing Pieces",
       "date": "2023",
-      "genres": [" Romance", " Shonen", " School"]
+      "genres": ["Romance", "Shonen", "School"]
     },
     {
       "id": 6,
@@ -55,11 +55,11 @@
       "animeName": "Undead Murder Farce",
       "date": "2023",
       "genres": [
-        " Vampires",
-        " Detective",
-        " Historical",
-        " Supernatural",
-        " Fantasy"
+        "Vampires",
+        "Detective",
+        "Historical",
+        "Supernatural",
+        "Fantasy"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "series": "10",
       "animeName": "Sugar Apple Fairy Tale Part 2",
       "date": "2023",
-      "genres": [" Drama", " Adventure", " Romance", " Shoujo", " Fantasy"]
+      "genres": ["Drama", "Adventure", "Romance", "Shoujo", "Fantasy"]
     },
     {
       "id": 8,
@@ -76,7 +76,7 @@
       "series": "13",
       "animeName": "Say 'I Love You.'",
       "date": "2012",
-      "genres": [" Drama", " Romance", " Shoujo", " School"]
+      "genres": ["Drama", "Romance", "Shoujo", "School"]
     },
     {
       "id": 9,
@@ -85,13 +85,13 @@
       "animeName": "Yamada-kun and the Seven Witches",
       "date": "2015",
       "genres": [
-        " Harem",
-        " Detective",
-        " Comedy",
-        " Romance",
-        " Supernatural",
-        " Shonen",
-        " School"
+        "Harem",
+        "Detective",
+        "Comedy",
+        "Romance",
+        "Supernatural",
+        "Shonen",
+        "School"
       ]
     },
     {
@@ -101,13 +101,13 @@
       "animeName": "Shiki Specials",
       "date": "2011",
       "genres": [
-        " Vampires",
-        " Detective",
-        " Psychological",
-        " Supernatural",
-        " Shonen",
-        " Thriller",
-        " Horror"
+        "Vampires",
+        "Detective",
+        "Psychological",
+        "Supernatural",
+        "Shonen",
+        "Thriller",
+        "Horror"
       ]
     },
     {
@@ -116,7 +116,7 @@
       "series": "15",
       "animeName": "Bastard‼ Heavy Metal, Dark Fantasy Season 2",
       "date": "2021",
-      "genres": [" Comedy", " Adventure", " Seinen", " Fantasy", " Action"]
+      "genres": ["Comedy", "Adventure", "Seinen", "Fantasy", "Action"]
     },
     {
       "id": 12,
@@ -124,7 +124,7 @@
       "series": "1",
       "animeName": "Princess Principal: Crown Handler - Chapter 2",
       "date": "2021",
-      "genres": [" Detective", " Historical", " Action"]
+      "genres": ["Detective", "Historical", "Action"]
     },
     {
       "id": 13,
@@ -132,7 +132,7 @@
       "series": "1",
       "animeName": "Lonely Castle in the Mirror",
       "date": "2022",
-      "genres": [" Detective", " Drama", " Fantasy"]
+      "genres": ["Detective", "Drama", "Fantasy"]
     },
     {
       "id": 14,
@@ -141,13 +141,13 @@
       "animeName": "The Little Lies We All Tell",
       "date": "2022",
       "genres": [
-        " Comedy",
-        " Everyday",
-        " Life",
-        " Supernatural",
-        " Shonen",
-        " Sci-Fi",
-        " School"
+        "Comedy",
+        "Everyday",
+        "Life",
+        "Supernatural",
+        "Shonen",
+        "Sci-Fi",
+        "School"
       ]
     },
     {
@@ -157,12 +157,12 @@
       "animeName": "King's Game",
       "date": "2017",
       "genres": [
-        " Madness",
-        " Detective",
-        " Drama",
-        " Supernatural",
-        " Horror",
-        " School"
+        "Madness",
+        "Detective",
+        "Drama",
+        "Supernatural",
+        "Horror",
+        "School"
       ]
     },
     {
@@ -172,12 +172,12 @@
       "animeName": "Zoku Touken Ranbu: Hanamaru",
       "date": "2018",
       "genres": [
-        " Drama",
-        " Historical",
-        " Comedy",
-        " Everyday Life",
-        " Fantasy",
-        " Action"
+        "Drama",
+        "Historical",
+        "Comedy",
+        "EverydayLife",
+        "Fantasy",
+        "Action"
       ]
     },
     {
@@ -187,12 +187,12 @@
       "animeName": "Overlord II",
       "date": "2018",
       "genres": [
-        " Games",
-        " Magic",
-        " Adventure",
-        " Supernatural",
-        " Fantasy",
-        " Action"
+        "Games",
+        "Magic",
+        "Adventure",
+        "Supernatural",
+        "Fantasy",
+        "Action"
       ]
     },
     {
@@ -201,7 +201,7 @@
       "series": "13",
       "animeName": "Arifureta: From Commonplace to World's Strongest",
       "date": "2019",
-      "genres": [" Harem", " Adventure", " Fantasy", " Action"]
+      "genres": ["Harem", "Adventure", "Fantasy", "Action"]
     },
     {
       "id": 19,
@@ -209,7 +209,7 @@
       "series": "12",
       "animeName": "22/7",
       "date": "2016",
-      "genres": [" Music"]
+      "genres": ["Music"]
     },
     {
       "id": 20,
@@ -217,7 +217,7 @@
       "series": "12",
       "animeName": "Warlords of Sigrdrifa",
       "date": "2020",
-      "genres": [" Military", " Action"]
+      "genres": ["Military", "Action"]
     },
     {
       "id": 21,
@@ -225,7 +225,7 @@
       "series": "9",
       "animeName": "Star Wars: Visions",
       "date": "2021",
-      "genres": [" Adventure", " Sci-Fi", " Action"]
+      "genres": ["Adventure", "Sci-Fi", "Action"]
     },
     {
       "id": 22,
@@ -233,7 +233,7 @@
       "series": "12",
       "animeName": "Kizumonogatari Part 1: Tekketsu",
       "date": "2016",
-      "genres": [" Vampires", " Detective", " Supernatural"]
+      "genres": ["Vampires", "Detective", "Supernatural"]
     },
     {
       "id": 23,
@@ -241,7 +241,7 @@
       "series": "25",
       "animeName": "Bakuman",
       "date": "2021",
-      "genres": [" Drama", " Comedy", " Romance", " Shounen"]
+      "genres": ["Drama", "Comedy", "Romance", "Shounen"]
     },
     {
       "id": 24,
@@ -249,7 +249,7 @@
       "series": "1",
       "animeName": "Shi Yi Chang An: Ming Yue Ji Shi You",
       "date": "2020",
-      "genres": [" Historical", " Romance"]
+      "genres": ["Historical", "Romance"]
     },
     {
       "id": 25,
@@ -257,7 +257,7 @@
       "series": "6",
       "animeName": "Engage Kiss",
       "date": "2021",
-      "genres": [" Comedy", " Romance"]
+      "genres": ["Comedy", "Romance"]
     },
     {
       "id": 26,
@@ -265,7 +265,7 @@
       "series": "12",
       "animeName": "Isekai Cheat Magician",
       "date": "2019",
-      "genres": [" Adventure", " Fantasy", " Action"]
+      "genres": ["Adventure", "Fantasy", "Action"]
     },
     {
       "id": 27,
@@ -273,7 +273,7 @@
       "series": "7",
       "animeName": "Sorcery Fight 2nd Season",
       "date": "2023",
-      "genres": [" Shounen", " Fantasy", " School", " Action"]
+      "genres": ["Shounen", "Fantasy", "School", "Action"]
     },
     {
       "id": 28,
@@ -281,7 +281,7 @@
       "series": "13",
       "animeName": "Godzilla Singular Point",
       "date": "2021",
-      "genres": [" Detective", " Mecha", " Sci-Fi", " Action"]
+      "genres": ["Detective", "Mecha", "Sci-Fi", "Action"]
     },
     {
       "id": 29,
@@ -289,14 +289,7 @@
       "series": "1",
       "animeName": "ONE PIECE FILM GOLD",
       "date": "2021",
-      "genres": [
-        " Drama",
-        " Comedy",
-        " Adventure",
-        " Shonen",
-        " Fantasy",
-        " Action"
-      ]
+      "genres": ["Drama", "Comedy", "Adventure", "Shonen", "Fantasy", "Action"]
     },
     {
       "id": 30,
@@ -304,7 +297,7 @@
       "series": "1",
       "animeName": "Koyomi Vamp",
       "date": "2017",
-      "genres": [" Vampires", " Detective", " Supernatural", " Action"]
+      "genres": ["Vampires", "Detective", "Supernatural", "Action"]
     },
     {
       "id": 31,
@@ -312,7 +305,7 @@
       "series": "24",
       "animeName": "Sword Art Online: Alicization",
       "date": "2018",
-      "genres": [" Games", " Adventure", " Romance", " Fantasy", " Action"]
+      "genres": ["Games", "Adventure", "Romance", "Fantasy", "Action"]
     },
     {
       "id": 32,
@@ -320,7 +313,7 @@
       "series": "13",
       "animeName": "Infinite Dendrogram",
       "date": "2020",
-      "genres": [" Games", " Fantasy"]
+      "genres": ["Games", "Fantasy"]
     },
     {
       "id": 33,
@@ -328,13 +321,7 @@
       "series": "8",
       "animeName": "Grandmaster of Demonic Cultivation 2",
       "date": "2019",
-      "genres": [
-        " Detective",
-        " Historical",
-        " Comedy",
-        " Supernatural",
-        " Action"
-      ]
+      "genres": ["Detective", "Historical", "Comedy", "Supernatural", "Action"]
     },
     {
       "id": 34,
@@ -343,12 +330,12 @@
       "animeName": "Shaman King",
       "date": "2021",
       "genres": [
-        " Comedy",
-        " Adventure",
-        " Supernatural",
-        " Shounen",
-        " Super Power",
-        " Action"
+        "Comedy",
+        "Adventure",
+        "Supernatural",
+        "Shounen",
+        "SuperPower",
+        "Action"
       ]
     },
     {
@@ -358,12 +345,12 @@
       "animeName": "The Irregularat Magic High School Visitor Arc",
       "date": "2020",
       "genres": [
-        " Magic",
-        " Romance",
-        " Supernatural",
-        " Sci-Fi",
-        " School",
-        " Action"
+        "Magic",
+        "Romance",
+        "Supernatural",
+        "Sci-Fi",
+        "School",
+        "Action"
       ]
     },
     {
@@ -372,7 +359,7 @@
       "series": "6",
       "animeName": "Yasuke",
       "date": "2021",
-      "genres": [" Samurai", " Fantasy", " Action"]
+      "genres": ["Samurai", "Fantasy", "Action"]
     }
   ]
 }

@@ -5,11 +5,12 @@ import { faLock, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faBell, faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 
 const Header = () => {
-  const [toggle, setToggle] = React.useState("active");
+  const [topics, setTopics] = React.useState(0);
 
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
+  const theme = [
+    <FontAwesomeIcon icon={faMoon} />,
+    <FontAwesomeIcon icon={faSun} />,
+  ];
 
   return (
     <div className="header">
@@ -28,12 +29,15 @@ const Header = () => {
         </div>
         <div className="themToggle">
           <ul className="toggleMenu">
-            <li className={toggle ? "active" : "moon"} onClick={handleClick}>
-              <FontAwesomeIcon icon={faMoon} />
-            </li>
-            <li className={!toggle ? "active" : "sun"} onClick={handleClick}>
-              <FontAwesomeIcon icon={faSun} />
-            </li>
+            {theme.map((value, i) => (
+              <li
+                className={topics == i ? "active" : ""}
+                key={i}
+                onClick={() => setTopics(i)}
+              >
+                {value}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="notification">
