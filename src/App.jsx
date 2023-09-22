@@ -16,6 +16,7 @@ function App() {
 
   const [selectedGenre, setSelectedGenre] = React.useState("");
   const [sortType, setSortType] = React.useState("");
+  const [searchValue, setSearchValue] = React.useState("");
 
   React.useEffect(() => {
     setIsLoaded(true);
@@ -25,10 +26,10 @@ function App() {
       ? sortType.replace("(ASC)", "")
       : sortType.replace("(DESC)", "");
 
-    console.log();
-
+    const search = searchValue ? `q=${searchValue}` : "";
+    const ganreSelected = selectedGenre ? `q=${selectedGenre}` : "";
     fetch(
-      `http://localhost:3001/animeList?_page=${currentPage}&_limit=16&q=${selectedGenre}&_sort=${sortBy}&_order=${order}`
+      `http://localhost:3001/animeList?_page=${currentPage}&_limit=16&${ganreSelected}&_sort=${sortBy}&_order=${order}&${search}`
     )
       .then((res) => res.json())
       .then(
@@ -42,8 +43,9 @@ function App() {
         }
       );
     window.scrollTo(0, 0);
-  }, [currentPage, selectedGenre, sortType]);
+  }, [currentPage, selectedGenre, sortType, searchValue]);
 
+  // console.log(searchValue);
   return (
     <div className="wrapper">
       <div className="wrapperContainer">
@@ -52,9 +54,11 @@ function App() {
             item,
             selectedGenre,
             sortType,
+            searchValue,
             setSortType,
             setCurrentPage,
             setSelectedGenre,
+            setSearchValue,
           }}
         >
           <Header />

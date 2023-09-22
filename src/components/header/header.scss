@@ -38,28 +38,29 @@
     .search {
       position: relative;
       width: 380px;
-      form {
-        width: 100%;
 
-        input {
-          padding: 0 60px 0 20px;
-          border-radius: 20px;
-          background: rgba(255, 255, 255, 0.2);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-          height: 40px;
-          width: 100%;
-          &::placeholder {
-            color: rgba(255, 255, 255, 0.781);
-          }
+      input {
+        padding: 0 60px 0 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        height: 40px;
+        width: 100%;
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.781);
         }
-        .searchBtn {
-          position: absolute;
-          top: 9px;
-          right: 0;
-          .searchL {
-            width: 60px;
-            color: #fff;
-            font-size: 14px;
+      }
+      .searchBtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        .searchL {
+          width: 25px;
+          color: #fff;
+          font-size: 14px;
+          transition: 0.3s;
+          &:hover {
+            color: #999999;
           }
         }
       }

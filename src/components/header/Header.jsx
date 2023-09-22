@@ -1,8 +1,13 @@
 import React from "react";
 import "./header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLock,
+  faMagnifyingGlass,
+  faX,
+} from "@fortawesome/free-solid-svg-icons";
 import { faBell, faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
+import { ItemContext } from "../../App";
 
 const Header = () => {
   const [topics, setTopics] = React.useState(0);
@@ -12,6 +17,8 @@ const Header = () => {
     <FontAwesomeIcon icon={faSun} />,
   ];
 
+  const { searchValue, setSearchValue } = React.useContext(ItemContext);
+
   return (
     <div className="header">
       <div className="headerWrapper">
@@ -20,12 +27,23 @@ const Header = () => {
           <div className="caption">watch anime online</div>
         </a>
         <div className="search">
-          <form action="#">
-            <input type="text" placeholder="Search anime..." />
-            <button className="searchBtn">
+          <input
+            value={searchValue}
+            type="text"
+            placeholder="Search anime..."
+            onChange={(event) => setSearchValue(event.target.value)}
+          />
+          <button className="searchBtn">
+            {(searchValue && (
+              <FontAwesomeIcon
+                icon={faX}
+                className="searchL"
+                onClick={() => setSearchValue("")}
+              />
+            )) || (
               <FontAwesomeIcon icon={faMagnifyingGlass} className="searchL" />
-            </button>
-          </form>
+            )}
+          </button>
         </div>
         <div className="themToggle">
           <ul className="toggleMenu">
