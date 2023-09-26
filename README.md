@@ -31,3 +31,7 @@ Added 2 sorting panels, 1st by anime genre, 2nd by release date and number of ep
 Added a button to clear all selected filters (X)
 
 ![filter](https://github.com/Jeyzik/AniWatch/assets/85117815/d07265b8-bcb7-44ec-ac7e-ad112fa16772)
+
+#reduxToolkit commit
+
+Added state manager redux toolkit, search for items moved to it
