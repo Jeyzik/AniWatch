@@ -1,4 +1,5 @@
 import React from "react";
+import debounce from "lodash.debounce";
 import "./header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,12 +14,28 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
   const [topics, setTopics] = React.useState(0);
+  const [value, setValue] = React.useState("");
 
   // Redux Toolkit
   const searchValue = useSelector((state) => state.filter.searchValue);
   const dispatch = useDispatch();
-  const onChangeInput = (name) => {
-    dispatch(setSearchValue(name));
+
+  const updateSearchValue = React.useCallback(
+    debounce((str) => {
+      dispatch(setSearchValue(str));
+    }, 1000),
+    []
+  );
+
+  const onChangeInput = (event) => {
+    // dispatch(setSearchValue(event.target.value));
+    setValue(event.target.value);
+    updateSearchValue(event.target.value);
+  };
+
+  const onClickClear = () => {
+    setValue("");
+    dispatch(setSearchValue(""));
   };
 
   const theme = [
@@ -35,17 +52,17 @@ const Header = () => {
         </a>
         <div className="search">
           <input
-            value={searchValue}
+            value={value}
             type="text"
             placeholder="Search anime..."
-            onChange={(event) => onChangeInput(event.target.value)}
+            onChange={onChangeInput}
           />
           <button className="searchBtn">
-            {(searchValue && (
+            {(value && (
               <FontAwesomeIcon
                 icon={faX}
                 className="searchL"
-                onClick={() => onChangeInput("")}
+                onClick={onClickClear}
               />
             )) || (
               <FontAwesomeIcon icon={faMagnifyingGlass} className="searchL" />

@@ -7,8 +7,12 @@ import CarouselTitle from "../../components/carouselTitle/CarouselTitle";
 import Menus from "../../components/menus/Menus";
 import Filter from "../../components/filterAnime/Filter";
 import NewAnimePosters from "../../components/newAnimePosters/NewAnimePosters";
-import { useDispatch } from "react-redux";
-import { setSelectedGenre, setSortType } from "../../redux/slices/filterSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setCurrentPage,
+  setSelectedGenre,
+  setSortType,
+} from "../../redux/slices/filterSlice";
 
 const Main = () => {
   // Redux Toolkit
@@ -20,7 +24,13 @@ const Main = () => {
     dispatch(setSortType(sortby));
   };
 
-  const { item, setCurrentPage } = React.useContext(ItemContext);
+  const onChangePage = (number) => {
+    dispatch(setCurrentPage(number));
+  };
+
+  const currentPage = useSelector((state) => state.filter.currentPage);
+
+  const { item } = React.useContext(ItemContext);
 
   const bottomItem = [
     {
@@ -92,7 +102,7 @@ const Main = () => {
               />
             ))}
           </div>
-          <Pagination onChangePage={(number) => setCurrentPage(number)} />
+          <Pagination currentPage={currentPage} onChangePage={onChangePage} />
           <h3 className="title">New anime on the site</h3>
           <div className="newPosters">
             {bottomItem.map((bottomItem, i) => (
