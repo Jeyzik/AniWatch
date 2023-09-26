@@ -2,7 +2,9 @@ import React from "react";
 import "./filter.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
-import { ItemContext } from "../../App";
+
+import { setSelectedGenre, setSortType } from "../../redux/slices/filterSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 export const sortBy = [
   { name: "date(DESC)", sortProprty: "date" },
@@ -11,8 +13,10 @@ export const sortBy = [
   { name: "series(ASC)", sortProprty: "-series" },
 ];
 const Filter = ({ onClickGenres, onClickSortBy }) => {
-  const { selectedGenre, setSelectedGenre, sortType, setSortType } =
-    React.useContext(ItemContext);
+  // Redux Toolkit
+  const selectedGenre = useSelector((state) => state.filter.selectedGenre);
+  const sortType = useSelector((state) => state.filter.sortType);
+  const dispatch = useDispatch();
 
   const [open, setOpen] = React.useState(false);
   const [openSort, setOpenSort] = React.useState(false);
@@ -146,8 +150,8 @@ const Filter = ({ onClickGenres, onClickSortBy }) => {
           <div className="btnClear">
             <button
               onClick={() => {
-                setSelectedGenre("");
-                setSortType("");
+                dispatch(setSelectedGenre(""));
+                dispatch(setSortType(""));
               }}
             >
               <FontAwesomeIcon icon={faX} />

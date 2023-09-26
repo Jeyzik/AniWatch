@@ -4,7 +4,7 @@ import Aside from "./components/aside/Aside";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Main from "./page/main/Main";
-import { sortBy } from "./components/filterAnime/Filter";
+import { useDispatch, useSelector } from "react-redux";
 
 export const ItemContext = React.createContext();
 
@@ -14,9 +14,10 @@ function App() {
   const [isLoaded, setIsLoaded] = React.useState(false);
   const [currentPage, setCurrentPage] = React.useState(1);
 
-  const [selectedGenre, setSelectedGenre] = React.useState("");
-  const [sortType, setSortType] = React.useState("");
-  const [searchValue, setSearchValue] = React.useState("");
+  // Redux Toolkit
+  const selectedGenre = useSelector((state) => state.filter.selectedGenre);
+  const sortType = useSelector((state) => state.filter.sortType);
+  const searchValue = useSelector((state) => state.filter.searchValue);
 
   React.useEffect(() => {
     setIsLoaded(true);
@@ -42,23 +43,16 @@ function App() {
           setError(error);
         }
       );
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage, selectedGenre, sortType, searchValue]);
 
-  // console.log(searchValue);
   return (
     <div className="wrapper">
       <div className="wrapperContainer">
         <ItemContext.Provider
           value={{
             item,
-            selectedGenre,
-            sortType,
-            searchValue,
-            setSortType,
             setCurrentPage,
-            setSelectedGenre,
-            setSearchValue,
           }}
         >
           <Header />

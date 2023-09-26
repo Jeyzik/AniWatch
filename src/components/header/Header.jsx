@@ -7,17 +7,24 @@ import {
   faX,
 } from "@fortawesome/free-solid-svg-icons";
 import { faBell, faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
-import { ItemContext } from "../../App";
+
+import { setSearchValue } from "../../redux/slices/filterSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
   const [topics, setTopics] = React.useState(0);
+
+  // Redux Toolkit
+  const searchValue = useSelector((state) => state.filter.searchValue);
+  const dispatch = useDispatch();
+  const onChangeInput = (name) => {
+    dispatch(setSearchValue(name));
+  };
 
   const theme = [
     <FontAwesomeIcon icon={faMoon} />,
     <FontAwesomeIcon icon={faSun} />,
   ];
-
-  const { searchValue, setSearchValue } = React.useContext(ItemContext);
 
   return (
     <div className="header">
@@ -31,14 +38,14 @@ const Header = () => {
             value={searchValue}
             type="text"
             placeholder="Search anime..."
-            onChange={(event) => setSearchValue(event.target.value)}
+            onChange={(event) => onChangeInput(event.target.value)}
           />
           <button className="searchBtn">
             {(searchValue && (
               <FontAwesomeIcon
                 icon={faX}
                 className="searchL"
-                onClick={() => setSearchValue("")}
+                onClick={() => onChangeInput("")}
               />
             )) || (
               <FontAwesomeIcon icon={faMagnifyingGlass} className="searchL" />

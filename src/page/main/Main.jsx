@@ -7,11 +7,20 @@ import CarouselTitle from "../../components/carouselTitle/CarouselTitle";
 import Menus from "../../components/menus/Menus";
 import Filter from "../../components/filterAnime/Filter";
 import NewAnimePosters from "../../components/newAnimePosters/NewAnimePosters";
-import { Routes } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setSelectedGenre, setSortType } from "../../redux/slices/filterSlice";
 
 const Main = () => {
-  const { item, setCurrentPage, setSelectedGenre, sortType, setSortType } =
-    React.useContext(ItemContext);
+  // Redux Toolkit
+  const dispatch = useDispatch();
+  const onClickGenres = (name) => {
+    dispatch(setSelectedGenre(name));
+  };
+  const onClickSortBy = (sortby) => {
+    dispatch(setSortType(sortby));
+  };
+
+  const { item, setCurrentPage } = React.useContext(ItemContext);
 
   const bottomItem = [
     {
@@ -70,10 +79,7 @@ const Main = () => {
         <CarouselTitle item={item} />
         <Menus />
         <div className="animeList">
-          <Filter
-            onClickGenres={(i) => setSelectedGenre(i)}
-            onClickSortBy={(i) => setSortType(i)}
-          />
+          <Filter onClickGenres={onClickGenres} onClickSortBy={onClickSortBy} />
           <div className="animePosters">
             {item.map((item, i) => (
               <AnimePosters
